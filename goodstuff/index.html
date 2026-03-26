@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Good Stuff</title>
+
+    <script>
+        if (!sessionStorage.getItem("loggedIn")) {
+            window.location.href = "/login.html?page=goodstuff";
+        }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Good Stuff</h1>
+
+        <p>Contents:</p>
+        <ul>
+            <li><a href="#search-engines">Search engines</a></li>
+            <li><a href="#free-images">Free images</a></li>
+            <li><a href="#free-books">Free books</a></li>
+        </ul>
+
+        <h2 id="search-engines">Search Engines</h2>
+        <p>Here are some search engines.</p>
+        <ul>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+            <li><a href="https://www.bing.com" target="_blank">Bing</a></li>
+            <li><a href="https://duckduckgo.com" target="_blank">DuckDuckGo</a></li>
+        </ul>
+
+        <h2 id="free-images">Free Images</h2>
+        <p>Here are some free image sites.</p>
+        <ul>
+            <li><a href="https://unsplash.com" target="_blank">Unsplash</a></li>
+            <li><a href="https://pixabay.com" target="_blank">Pixabay</a></li>
+            <li><a href="https://www.pexels.com" target="_blank">Pexels</a></li>
+        </ul>
+
+        <h2 id="free-books">Free Books</h2>
+        <p>Here are some free book sites.</p>
+        <ul>
+            <li><a href="https://www.gutenberg.org" target="_blank">Project Gutenberg</a></li>
+            <li><a href="https://openlibrary.org" target="_blank">Open Library</a></li>
+            <li><a href="https://manybooks.net" target="_blank">ManyBooks</a></li>
+        </ul>
+    </div>
+</body>
+</html>
