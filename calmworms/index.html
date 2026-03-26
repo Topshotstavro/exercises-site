@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calm Worms</title>
+
+    <script>
+        if (!sessionStorage.getItem("loggedIn")) {
+            window.location.href = "/login.html?page=calmworms";
+        }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Calm Worms</h1>
+
+        <p>Here's the latest data on your worm team.</p>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Weight (grams)</th>
+                <th>Calmness</th>
+            </tr>
+
+            <tr>
+                <td>Wilbur</td>
+                <td>219</td>
+                <td>5</td>
+            </tr>
+
+            <tr>
+                <td>Ed</td>
+                <td>241</td>
+                <td>4</td>
+            </tr>
+
+            <tr>
+                <td>June</td>
+                <td>191</td>
+                <td>5</td>
+            </tr>
+
+            <tr>
+                <td>Ward</td>
+                <td>81</td>
+                <td>3</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
