@@ -7,7 +7,7 @@
     <script>
         if (!sessionStorage.getItem("loggedIn")) {
             const currentPath = window.location.pathname;
-            window.location.href = "/login.html?page=" + encodeURIComponent(currentPath);
+            window.location.href = "/login.html?page=animalimages/";
         }
     </script>
 
@@ -15,18 +15,18 @@
 </head>
 <body>
     <div class="card">
-        <h1>Doggos</h1>
+        <h1>Animals</h1>
 
         <p>Aren't they cute?</p>
 
-        <!-- photo 1 -->
-        <img src="../dog.jpg" alt="dog" class="photo">
+        <!-- dog 1 -->
+        <img src="dog1.jpg" alt="dog" class="photo">
 
-        <!-- transparent image -->
-        <img src="dog.png" alt="dog drawing" class="drawing">
+        <!-- frog (drawing, transparent) -->
+        <img src="frog.png" alt="frog drawing" class="drawing">
 
-        <!-- photo 2 -->
-        <img src="../subfolders/dog.jpg" alt="dog" class="photo">
+        <!-- dog 2 -->
+        <img src="dog2.jpg" alt="dog" class="photo">
     </div>
 </body>
 </html>
