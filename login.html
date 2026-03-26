@@ -5,24 +5,28 @@
 </head>
 <body style="text-align:center; margin-top:100px;">
 
-<h2>Enter Password</h2>
+<h2>Login Required</h2>
 
-<input type="password" id="pass">
+<input type="text" id="user" placeholder="Username">
 <br><br>
+<input type="password" id="pass" placeholder="Password">
+<br><br>
+
 <button onclick="check()">Login</button>
 
 <script>
 function check() {
+    let username = document.getElementById("user").value;
     let password = document.getElementById("pass").value;
 
     let params = new URLSearchParams(window.location.search);
     let page = params.get("page");
 
-    if (password === "1234") {
+    if (username === "admin" && password === "1234") {
         sessionStorage.setItem("loggedIn", "true");
         window.location.href = "/" + page;
     } else {
-        alert("Wrong password");
+        alert("Wrong username or password");
     }
 }
 </script>
