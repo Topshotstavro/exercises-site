@@ -1,0 +1,27 @@
+body {
+    background-color: #d9f0ff;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    width: 420px;
+    background-color: #fff4cc;
+    border: 2px solid #444;
+    padding: 20px;
+    margin: 40px auto;
+}
+
+h1 {
+    color: darkred;
+    font-family: "Comic Sans MS", cursive;
+}
+
+h2 {
+    color: darkgreen;
+    font-family: Georgia, serif;
+}
+
+p {
+    color: navy;
+    font-family: Arial, sans-serif;
+}
