@@ -3,19 +3,24 @@
 <head>
     <title>Login</title>
 </head>
-<body>
+<body style="text-align:center; margin-top:100px;">
 
-<h1>Enter Password</h1>
+<h2>Enter Password</h2>
 
 <input type="password" id="pass">
-<button onclick="check()">Enter</button>
+<br><br>
+<button onclick="check()">Login</button>
 
 <script>
 function check() {
     let password = document.getElementById("pass").value;
 
+    // get which page to go to
+    let params = new URLSearchParams(window.location.search);
+    let page = params.get("page");
+
     if (password === "1234") {
-        window.location.href = "headers/";
+        window.location.href = page;
     } else {
         alert("Wrong password");
     }
