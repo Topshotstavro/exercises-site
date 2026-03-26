@@ -15,12 +15,12 @@
 function check() {
     let password = document.getElementById("pass").value;
 
-    // get which page to go to
     let params = new URLSearchParams(window.location.search);
     let page = params.get("page");
 
     if (password === "1234") {
-        window.location.href = page;
+        sessionStorage.setItem("loggedIn", "true");
+        window.location.href = "/" + page;
     } else {
         alert("Wrong password");
     }
