@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auction Guide</title>
+
+    <script>
+        if (!sessionStorage.getItem("loggedIn")) {
+            const currentPath = window.location.pathname;
+            window.location.href = "/login.html?page=" + currentPath;
+        }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Auction Guide</h1>
+
+        <p class="toy-note">Toys are green.</p>
+        <p class="food-note">Food is brown.</p>
+        <p class="other-note">Other things are black.</p>
+
+        <p class="toy-item">Lot 1. Ball, well-chewed.</p>
+        <p class="toy-item">Lot 2. Rope, wet.</p>
+        <p class="food-item">Lot 3. Bacon, 6 oz.</p>
+        <p class="other-item">Lot 4. Bowl, small.</p>
+        <p class="other-item">Lot 5. Bowl, large.</p>
+        <p class="food-item">Lot 6. Jerky, two strips.</p>
+        <p class="toy-item">Lot 7. Frisbee.</p>
+    </div>
+</body>
+</html>
