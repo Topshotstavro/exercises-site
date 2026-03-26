@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Strategy</title>
+
+    <script>
+        if (!sessionStorage.getItem("loggedIn")) {
+            window.location.href = "/login.html?page=filestrategy";
+        }
+    </script>
+
+    <!-- TWO stylesheets -->
+    <link rel="stylesheet" href="styles/standard.css">
+    <link rel="stylesheet" href="styles/special.css">
+</head>
+<body>
+    <div class="card">
+        <h1>File strategy</h1>
+
+        <p>This is a standard paragraph.</p>
+
+        <div class="warning">
+            <h2>Warning</h2>
+            <p>This is a warning, styled in <code>standard.css</code>.</p>
+        </div>
+
+        <p>
+            Text like "<code>standard.css</code>" is styled in 
+            <code>standard.css</code>.
+        </p>
+
+        <p class="special">
+            This is a special paragraph, styled in <code>special.css</code>.
+        </p>
+
+        <p>
+            This image is in the <code>images</code> folder.
+        </p>
+
+        <img src="images/dog.jpg" alt="dog">
+    </div>
+</body>
+</html>
