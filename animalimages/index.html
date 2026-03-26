@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animal Images</title>
+
+    <script>
+        if (!sessionStorage.getItem("loggedIn")) {
+            const currentPath = window.location.pathname;
+            window.location.href = "/login.html?page=" + encodeURIComponent(currentPath);
+        }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Doggos</h1>
+
+        <p>Aren't they cute?</p>
+
+        <!-- photo 1 -->
+        <img src="../dog.jpg" alt="dog" class="photo">
+
+        <!-- transparent image -->
+        <img src="dog.png" alt="dog drawing" class="drawing">
+
+        <!-- photo 2 -->
+        <img src="../subfolders/dog.jpg" alt="dog" class="photo">
+    </div>
+</body>
+</html>
