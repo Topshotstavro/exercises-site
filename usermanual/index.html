@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Manual</title>
+
+    <script>
+        if (!sessionStorage.getItem("loggedIn")) {
+            const currentPath = window.location.pathname;
+            window.location.href = "/login.html?page=" + currentPath;
+        }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1><span class="model">X-33j</span> User Manual</h1>
+
+        <p>
+            Congratulations on your purchase of an 
+            <span class="model">X-33j</span> personal assistant robot.
+            You are sure to enjoy years of service from your new robot.
+        </p>
+
+        <div class="box">
+            <h2>Alternative Fact</h2>
+            <p>That's a lie..., er, alternative fact. You'll be lucky to get six months out of it.</p>
+        </div>
+
+        <p>
+            Your <span class="model">X-33j</span> is extremely safe.
+        </p>
+
+        <div class="box">
+            <h2>Alternative Fact</h2>
+            <p>Not so. It will kill you eventually. Lucky that they don't last long, really.</p>
+        </div>
+    </div>
+</body>
+</html>
