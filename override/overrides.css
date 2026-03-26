@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: lightblue;
+}
+
+.text-warning {
+    color: yellow !important;
+}
+
+.border {
+    border: 3px solid white !important;
+    padding: 4px;
+}
+
+em {
+    font-style: italic;
+}
