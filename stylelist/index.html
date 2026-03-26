@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Style List</title>
+
+    <script>
+        if (!sessionStorage.getItem("loggedIn")) {
+            const currentPath = window.location.pathname;
+            window.location.href = "/login.html?page=stylelist/";
+        }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1>FPS Games</h1>
+
+        <p>
+            Here are some FPS games. My faves are
+            <span class="marked-word">marked</span>.
+        </p>
+
+        <div class="list-box">
+            <ul>
+                <li>Arma 2</li>
+                <li class="favorite">Borderlands 2</li>
+                <li>Bulletstorm</li>
+                <li>FarCry 2</li>
+                <li class="favorite">FarCry 5</li>
+                <li>Painkiller</li>
+                <li class="favorite">Skyrim</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
