@@ -1,7 +1,7 @@
 <script>
 if (!sessionStorage.getItem("loggedIn")) {
     const currentPath = window.location.pathname;
-    window.location.href = "/login.html?page=" + currentPath;
+    window.location.href = "/login.html?page=" + encodeURIComponent(currentPath);
 }
 </script>
 
