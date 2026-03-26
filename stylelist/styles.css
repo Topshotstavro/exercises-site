@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    width: 290px;
+    background-color: cornsilk;
+    border: 1px solid lightgray;
+    padding: 12px;
+    margin: 30px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.marked-word {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.list-box {
+    border: 3px solid #cfcfcf;
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-top: 15px;
+}
+
+ul {
+    margin: 0;
+    padding-left: 22px;
+}
+
+li {
+    margin-left: 8px;
+}
+
+.favorite {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.favorite::marker {
+    color: red;
+}
