@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doggos</title>
+
+    <script>
+      if (!sessionStorage.getItem("loggedIn")) {
+        window.location.href = "/login.html?page=override";
+      }
+    </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="overrides.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+
+          <h1>Doggos</h1>
+
+          <p class="lead">Who's the best?</p>
+
+          <p>Doggos are the <em>best!</em></p>
+
+          <p>Here's one now!</p>
+
+          <p class="m-4">
+            <img class="border" src="dog1.jpg" alt="Goat">
+          </p>
+
+          <p class="text-warning">Oops. That's a goat.</p>
+
+          <p>Let's try that again.</p>
+
+          <p class="m-4">
+            <img class="border" src="dog2.jpg" alt="Doggo">
+          </p>
+
+          <p><em>That's</em> a doggo!</p>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
