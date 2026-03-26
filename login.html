@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+
+<h1>Enter Password</h1>
+
+<input type="password" id="pass">
+<button onclick="check()">Enter</button>
+
+<script>
+function check() {
+    let password = document.getElementById("pass").value;
+
+    if (password === "1234") {
+        window.location.href = "headers/";
+    } else {
+        alert("Wrong password");
+    }
+}
+</script>
+
+</body>
+</html>
