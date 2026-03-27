@@ -1,4 +1,9 @@
-
+<script>
+if (!sessionStorage.getItem("loggedIn")) {
+    const currentPath = window.location.pathname;
+    window.location.href = "/login.html?page=basicgrid/";
+}
+</script>
 
 
 <!doctype html>
