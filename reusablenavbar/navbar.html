@@ -1,0 +1,14 @@
+<script>
+if (!sessionStorage.getItem("loggedIn")) {
+    window.location.href = "/login.html?page=reusablenavbar/";
+}
+</script>
+
+<nav class="navbar navbar-expand navbar-light bg-light mb-3 px-3">
+  <a class="navbar-brand" href="index.html">Yum!</a>
+
+  <div class="navbar-nav">
+    <a class="nav-link" href="coffee.html">Coffee</a>
+    <a class="nav-link" href="chocolate.html">Chocolate</a>
+  </div>
+</nav>
