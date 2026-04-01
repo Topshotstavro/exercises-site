@@ -1,0 +1,71 @@
+<script>
+if (!sessionStorage.getItem("loggedIn")) {
+    const currentPath = window.location.pathname;
+    window.location.href = "/login.html?page=basicstyles/";
+}
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Carded</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-4">
+  <h1>Get Carded</h1>
+  <p>Here are some cards.</p>
+
+  <div class="row g-3">
+
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100">
+        <img src="frog.png" class="card-img-top" alt="Frog">
+        <div class="card-body">
+          <h5 class="card-title">Frog</h5>
+          <p class="card-text">Green frog with big orange eyes.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100">
+        <img src="cthulu.jpg" class="card-img-top" alt="Cthulu">
+        <div class="card-body">
+          <h5 class="card-title">Cthulu</h5>
+          <p class="card-text">A creepy green creature with wings.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100">
+        <img src="coffee.jpg" class="card-img-top" alt="Coffee">
+        <div class="card-body">
+          <h5 class="card-title">Coffee</h5>
+          <p class="card-text">A hot cup of black coffee.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100">
+        <img src="chocolate.jpg" class="card-img-top" alt="Chocolate">
+        <div class="card-body">
+          <h5 class="card-title">Chocolate</h5>
+          <p class="card-text">Delicious chocolate bars.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
